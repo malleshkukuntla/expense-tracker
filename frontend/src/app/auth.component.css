@@ -1,0 +1,26 @@
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 1fr; }
+.intro { background: var(--ink); color: #fff; padding: 64px 56px; display: flex; flex-direction: column; justify-content: center; }
+.intro h1 { margin: 0 0 16px; font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.intro p { margin: 0; max-width: 420px; color: #b9bdea; font-size: 1.05rem; }
+
+.panel { display: grid; place-items: center; padding: 32px 20px; }
+.box { width: 100%; max-width: 380px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
+.box h2 { margin: 0 0 20px; font-size: 1.4rem; font-weight: 700; }
+
+label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); margin-bottom: 14px; }
+input { display: block; width: 100%; margin-top: 6px; padding: 12px; border: 1.5px solid var(--line); border-radius: 10px; background: #fafbff; }
+input:focus { border-color: var(--focus); outline: none; box-shadow: 0 0 0 3px #4f56d933; }
+
+.primary { width: 100%; background: var(--ink); color: #fff; border: 0; padding: 13px 16px; border-radius: 12px; font-weight: 700; cursor: pointer; margin-top: 4px; }
+.primary:hover:not(:disabled) { background: #2c3178; }
+.primary:disabled { opacity: 0.6; cursor: wait; }
+
+.alert { background: #fdecec; color: #a32428; border: 1px solid #f6c5c7; padding: 10px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 0.9rem; font-weight: 500; }
+.alt { margin: 18px 0 0; text-align: center; font-size: 0.9rem; color: var(--ink-soft); }
+.alt a { color: var(--focus); font-weight: 600; text-decoration: none; }
+.alt a:hover { text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .auth { grid-template-columns: 1fr; min-height: 0; }
+  .intro { padding: 36px 24px; }
+}

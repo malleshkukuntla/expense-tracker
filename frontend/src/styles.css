@@ -1,0 +1,21 @@
+:root {
+  --ink: #1d2150;
+  --ink-soft: #5b6090;
+  --mist: #eef1f9;
+  --card: #ffffff;
+  --line: #e1e5f2;
+  --income: #0f9d8a;
+  --expense: #e5484d;
+  --focus: #4f56d9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--mist);
+  color: var(--ink);
+  line-height: 1.5;
+}
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

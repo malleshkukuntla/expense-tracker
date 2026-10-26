@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1793023072492499,
+      "name": "mallesh",
+      "email": "malleshkukuntla@gmail.com",
+      "passwordHash": "$2a$10$7ee9HeHGiqeuA7kIJXQGwuMTZ89rg2pItJDltMzKyJyIU1v6XitES"
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1793023101033944,
+      "userId": 1793023072492499,
+      "title": "biryani",
+      "amount": 200,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-26"
+    },
+    {
+      "id": 1793023127417064,
+      "userId": 1793023072492499,
+      "title": "extra work",
+      "amount": 1200,
+      "type": "income",
+      "category": "Allowance",
+      "date": "2026-10-26"
+    }
+  ]
+}
